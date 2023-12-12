@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sellrs </title>
+
+
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+</head>
+
+<body>
+
+    <main>
+
+        <!-- ---------------------------- Header ---------------------------- -->
+
+        <header class="fixed-top bg-white desktop">
+            <div class="container">
+                <div class="navbar">
+                    <div class="nav-left">
+                        <div class="logo">
+                            <img src="assets/media/images/Nav Logo.png" alt="">
+                        </div>
+
+                        <div class="dropdown">
+                            <button class="btn btn-white dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Category
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Category 1</a></li>
+                                <li><a class="dropdown-item" href="#">Category 2</a></li>
+                                <li><a class="dropdown-item" href="#">Category 3</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="search-container">
+                        <input type="text" class="search-input" placeholder="Type to search">
+                        <button class="search-button"><i class="fa fa-search"></i></button>
+                    </div>
+
+                    <div class="nav-links">
+                        <a href="">Blog</a>
+                        <a href="">FAQ</a>
+                        <div class="dropdown">
+                            <button class="btn btn-white dropdown-toggle" type="button" id="languageDropdown"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="assets/media/images/Flag.svg" alt="English Flag" class="flag-icon"> English
+                                (US)
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                                <li><a class="dropdown-item" href="#"><img src="assets/media/images/Flag.svg"
+                                            alt="English Flag" class="flag-icon"> English</a></li>
+                                <li><a class="dropdown-item" href="#"><img src="assets/media/images/Flag.svg"
+                                            alt="English Flag" class="flag-icon"> Français</a></li>
+                                <li><a class="dropdown-item" href="#"><img src="assets/media/images/Flag.svg"
+                                            alt="English Flag" class="flag-icon"> Español</a></li>
+                                <!-- Add more language options as needed -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+         <!-- ---------------------------- Header For Small Devices ---------------------------- -->
+         <header class="fixed-top bg-white tab">
+            <div class="container">
+                <div class="navbar">
+                    <div class="nav-left">
+                        <div class="logo">
+                            <img src="assets/media/images/Nav Logo.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="search-container">
+                        <input type="text" class="search-input" placeholder="Type to search">
+                        <button class="search-button"><i class="fa fa-search"></i></button>
+                    </div>
+
+
+
+                    <div class="toggle-bar">
+                        <svg class="svg-icon" style="width: 26px; height: 26px;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M128 213.333333l768 0q17.664 0 30.165333 12.501333t12.501333 30.165333-12.501333 30.165333-30.165333 12.501333l-768 0q-17.664 0-30.165333-12.501333t-12.501333-30.165333 12.501333-30.165333 30.165333-12.501333zM128 725.333333l768 0q17.664 0 30.165333 12.501333t12.501333 30.165333-12.501333 30.165333-30.165333 12.501333l-768 0q-17.664 0-30.165333-12.501333t-12.501333-30.165333 12.501333-30.165333 30.165333-12.501333zM128 469.333333l768 0q17.664 0 30.165333 12.501333t12.501333 30.165333-12.501333 30.165333-30.165333 12.501333l-768 0q-17.664 0-30.165333-12.501333t-12.501333-30.165333 12.501333-30.165333 30.165333-12.501333z"  /></svg>
+                    </div>
+
+                    <div class="nav-bar">
+                        <button class="close-button">&times;</button>
+
+                        <div class="m-nav-links">
+
+                            
+                            <a href="">Blog</a>
+                            <a href="">FAQ</a>
+                            <div class="dropdown">
+                                <button class="btn btn-white dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Category
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Category 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Category 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Category 3</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="dropdown">
+                                <button class="btn btn-white dropdown-toggle" type="button" id="languageDropdown"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="assets/media/images/Flag.svg" alt="English Flag" class="flag-icon"> English
+                                    (US)
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                                    <li><a class="dropdown-item" href="#"><img src="assets/media/images/Flag.svg"
+                                                alt="English Flag" class="flag-icon"> English</a></li>
+                                    <li><a class="dropdown-item" href="#"><img src="assets/media/images/Flag.svg"
+                                                alt="English Flag" class="flag-icon"> Français</a></li>
+                                    <li><a class="dropdown-item" href="#"><img src="assets/media/images/Flag.svg"
+                                                alt="English Flag" class="flag-icon"> Español</a></li>
+                                </ul>
+                            </div>
+
+
+                            
+                            <div class="search-container-m">
+                                <input type="text" class="search-input-m" placeholder="Type to search">
+                                <button class="search-button"><i class="fa fa-search"></i></button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+
+        <!-- --------------------------- Hero ---------------------------- -->
+
+        <section class="home">
+            <div class="container">
+                <div class="hero-section">
+                    <div class="hero-title">
+                        <h6>about sellrs</h6>
+                        <h1>
+                            Providing a leading comparison platform.
+                        </h1>
+
+                        <p>
+                            At Sellrs, we're not just another comparison site. We blend technology with expertise to
+                            ensure you always make the right choice, whether you're selling or buying.
+                        </p>
+                    </div>
+
+
+                    <div class="hero-cards">
+                        <div class="left-card">
+                            <div class="top-card">
+                                <div class="hero-content">
+                                    <h6>our specialty</h6>
+                                    <h1>
+                                        Electronics expertise.
+                                    </h1>
+                                    <p>From phones to wearables, we've got you covered.</p>
+                                </div>
+
+                                <div class="hero-appleset">
+                                    <img src="assets/media/images/Apple Set.png" alt="">
+                                </div>
+                            </div>
+
+                            <div class="bottom-card">
+                                <div class="hero-content">
+                                    <h6>KNOWLEDGE</h6>
+                                    <h1>
+                                        In-depth guides & reviews.
+                                    </h1>
+                                    <p>Your decision-making process, simplified.</p>
+                                </div>
+
+                                <div class="hero-imageicon">
+                                    <img src="assets/media/images/image.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="right-card">
+                            <div class="buynow-img">
+                                <img src="assets/media/images/How Card Visuals.png" width="100%" alt="">
+                            </div>
+
+                            <div class="right-content">
+                                <h6>WHAT WE OFFER</h6>
+                                <h1>
+                                    Your premium comparison tool.
+                                </h1>
+
+                                <p>
+                                    Find the best deals effortlessly.
+                                </p>
+
+                                <button href="#" class="btn">
+                                    <img src="assets/media/images/Icon/btn.png" alt="button"> <span>Explore</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- --------------------------- Our Values ---------------------------- -->
+
+        <section class="values">
+            <div class="container">
+                <div class="values-section">
+                    <div class="values-title">
+                        <h6>OUR VALUES</h6>
+                        <h1>
+                            The Compass Behind Our Journey
+                        </h1>
+
+                        <p>
+                            Guided by core principles, we prioritize honesty, care for our users, and sustainability at
+                            every turn.
+                        </p>
+                    </div>
+
+                    <div class="value-box">
+                        <div class="box-items">
+                            <div class="box-img">
+                                <img src="assets/media/images/values/1.png" alt="">
+                            </div>
+
+                            <div class="box-content">
+                                <h4>Transparency</h4>
+                                <p>
+                                    Providing clear insights, so you’ll know what to expect.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="box-items">
+                            <div class="box-img">
+                                <img src="assets/media/images/values/2.png" alt="">
+                            </div>
+
+                            <div class="box-content">
+                                <h4>Integrity</h4>
+                                <p>
+                                    Upholding the truth in every recommendation and review.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="box-items">
+                            <div class="box-img">
+                                <img src="assets/media/images/values/3.png" alt="">
+                            </div>
+
+                            <div class="box-content">
+                                <h4>Customer Focus</h4>
+                                <p>
+                                    Your feedback is our roadmap to continuous improvement.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="box-items">
+                            <div class="box-img">
+                                <img src="assets/media/images/values/4.png" alt="">
+                            </div>
+
+                            <div class="box-content">
+                                <h4>Sustainability</h4>
+                                <p>
+                                    Championing green practices to give tech a second life.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- --------------------------- Our Values ---------------------------- -->
+
+        <section class="mac-display">
+            <div class="container">
+                <div class="macdisplay-section">
+                    <img src="assets/media/images/Mac Studio and Studio Display.png" alt="">
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- --------------------------- Our Services ---------------------------- -->
+
+        <section class="service">
+            <div class="container">
+                <div class="service-section">
+                    <div class="service-content">
+                        <h6>why SELLRS</h6>
+                        <h1>
+                            A catchy heading that brings some interest to visitors
+                        </h1>
+
+                    </div>
+
+
+                    <div class="service-items">
+                        <div class="service-box">
+                            <div class="icons pink-planet">
+                                <img src="assets/media/images/service/Planet.svg">
+                            </div>
+
+                            <h3>Global Expertise</h3>
+
+                            <p>
+                                Harnessing insights from tech markets across the globe, we fine-tune our services to
+                                offer you a tailored and world-class experience.
+                            </p>
+                        </div>
+
+                        <div class="service-box">
+                            <div class="icons timer">
+                                <img src="assets/media/images/service/Timer.svg">
+                            </div>
+
+                            <h3>Timely Updates</h3>
+
+                            <p>
+                                Stay ahead of the curve with real-time information, ensuring you're always informed
+                                about the latest tech trends and exclusive offers.
+                            </p>
+                        </div>
+
+                        <div class="service-box">
+                            <div class="icons lock">
+                                <img src="assets/media/images/service/LockKey.svg">
+                            </div>
+
+                            <h3>Secure Transactions</h3>
+
+                            <p>
+                                Prioritizing your security, our platforms employ state-of-the-art encryption,
+                                safeguarding your data and ensuring trusted deals.
+                            </p>
+                        </div>
+
+                        <div class="service-box">
+                            <div class="icons users">
+                                <img src="assets/media/images/service/UsersThree.svg">
+                            </div>
+
+                            <h3>Sellrs Community</h3>
+
+                            <p>
+                                Dive into a vibrant community of tech enthusiasts, where shared reviews, tips, and
+                                firsthand experiences make informed choices easier.
+                            </p>
+                        </div>
+
+                        <div class="service-box">
+                            <div class="icons blue-planet">
+                                <img src="assets/media/images/service/Planet (1).svg">
+                            </div>
+
+                            <h3>Seamless Experience</h3>
+
+                            <p>
+                                With our meticulously designed, user-friendly interfaces, your journey from browsing to
+                                decision-making becomes effortless.
+                            </p>
+                        </div>
+
+                        <div class="service-box">
+                            <div class="icons black-planet">
+                                <img src="assets/media/images/service/Planet (2).svg">
+                            </div>
+
+                            <h3>Award-Winning Service</h3>
+
+                            <p>
+                                Celebrated industry-wide, our dedication to excellence and unwavering commitment to user
+                                satisfaction sets us apart.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+        <!-- --------------------------- Join US ---------------------------- -->
+
+        <section class="join-us">
+            <div class="container">
+                <div class="joinus-section">
+                    <div class="apple-box">
+                        <img src="assets/media/images/apple-box.png" alt="">
+                    </div>
+
+                    <div class="joinus-content">
+                        <h6>PARTNERSHIPS</h6>
+                        <h1>
+                            Join Hands with Sellrs
+                        </h1>
+
+                        <p>
+                            Passionate about electronics and innovation? Let's explore new horizons together.
+                        </p>
+
+                        <button href="#" class="join-btn">
+                            <span>Explore</span> <img src="assets/media/images/Icon/Right.svg" alt="icon">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- --------------------------- FAQ ---------------------------- -->
+
+        <section class="faq">
+            <div class="container">
+                <div class="faq-section">
+                    <div class="faq-title">
+                        <h1>
+                            Frequently Asked Questions
+                        </h1>
+
+                        <p>
+                            Not able to find the answers you’re looking for?
+                            Reach out to our <span class="yellow">customer support</span> team.
+                        </p>
+                    </div>
+                    <div class="accordion">
+                        <div class="content-accordion">
+                            <div class="question-answer">
+                                <div class="question">
+                                    <h3 class="title-question">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+                                    </h3>
+                                    <button class="question-btn">
+                                        <span class="up-icon">
+                                            <i class="fas fa-chevron-up"></i>
+                                        </span>
+                                        <span class="down-icon">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </span>
+                                    </button>
+                                </div>
+                                <div class="answer">
+                                    <p>Lorem ipsum dolor sit amet
+                                        consectetur adipisicing elit.
+                                        Quisquam assumenda sapiente
+                                        mollitia excepturi quos id
+                                        magnam obcaecati non est?
+                                        Maiores?</p>
+                                </div>
+                            </div>
+
+                            <div class="question-answer">
+                                <div class="question">
+                                    <h3 class="title-question">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+                                    </h3>
+                                    <button class="question-btn">
+                                        <span class="up-icon">
+                                            <i class="fas fa-chevron-up"></i>
+                                        </span>
+                                        <span class="down-icon">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </span>
+                                    </button>
+                                </div>
+                                <div class="answer">
+                                    <p>Lorem ipsum dolor sit amet
+                                        consectetur adipisicing elit.
+                                        Quisquam assumenda sapiente
+                                        mollitia excepturi quos id
+                                        magnam obcaecati non est?
+                                        Maiores?</p>
+                                </div>
+                            </div>
+                            <div class="question-answer">
+                                <div class="question">
+                                    <h3 class="title-question">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+                                    </h3>
+                                    <button class="question-btn">
+                                        <span class="up-icon">
+                                            <i class="fas fa-chevron-up"></i>
+                                        </span>
+                                        <span class="down-icon">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </span>
+                                    </button>
+                                </div>
+                                <div class="answer">
+                                    <p>Lorem ipsum dolor sit amet
+                                        consectetur adipisicing elit.
+                                        Quisquam assumenda sapiente
+                                        mollitia excepturi quos id
+                                        magnam obcaecati non est?
+                                        Maiores?</p>
+                                </div>
+                            </div>
+                            <div class="question-answer">
+                                <div class="question">
+                                    <h3 class="title-question">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+                                        This is some subtext which appears after expanding the accordian.
+                                    </h3>
+                                    <button class="question-btn">
+                                        <span class="up-icon">
+                                            <i class="fas fa-chevron-up"></i>
+                                        </span>
+                                        <span class="down-icon">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </span>
+                                    </button>
+                                </div>
+                                <div class="answer">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</p>
+                                </div>
+                            </div>
+                            <div class="question-answer">
+                                <div class="question">
+                                    <h3 class="title-question">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+                                    </h3>
+                                    <button class="question-btn">
+                                        <span class="up-icon">
+                                            <i class="fas fa-chevron-up"></i>
+                                        </span>
+                                        <span class="down-icon">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </span>
+                                    </button>
+                                </div>
+                                <div class="answer">
+                                    <p>Lorem ipsum dolor sit amet
+                                        consectetur adipisicing elit.
+                                        Quisquam assumenda sapiente
+                                        mollitia excepturi quos id
+                                        magnam obcaecati non est?
+                                        Maiores?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- --------------------------- Footer ---------------------------- -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <!-- First Column -->
+                    <div class="col-md-3">
+                        <div class="footer-left">
+                            <div class="f-logo">
+                                <a href="#">
+                                    <img src="assets/media/images/Nav Logo.png" alt="">
+                                </a>
+                            </div>
+
+                            <p>© Copyright 2023 Sellrs. <br>
+                                All rights reserved.
+                            </p>
+
+                            <button href="#" class="language-btn">
+                                <img src="assets/media/images/Icon/btn.png" alt="button"> <span>English (US)</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Second Column -->
+                    <div class="col-md-3">
+                        <div class="short-links">
+                            <h5>Company</h5>
+                            <a href="">Compare Deals</a>
+                            <a href="">How It Works</a>
+                            <a href="">Blog</a>
+                            <a href="">Careers</a>
+                            <a href="">Referral Program</a>
+                            <a href="">Community</a>
+                        </div>
+                    </div>
+
+                    <!-- Third Column -->
+                    <div class="col-md-3">
+                        <div class="short-links">
+                            <h5>Legal</h5>
+                            <a href="">Legal Notice</a>
+                            <a href="">Privacy Policy</a>
+                            <a href="">Terms of Use</a>
+                            <a href="">DPA</a>
+                            <a href="">DMCA Policy</a>
+                            <a href="">ERDF Support</a>
+                        </div>
+                    </div>
+
+                    <!-- Fourth Column -->
+                    <div class="col-md-3">
+                        <div class="social-links">
+                            <h5>Follow us</h5>
+
+                            <div class="social">
+
+                                <!-- Facebook -->
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_162_186)">
+                                            <path
+                                                d="M20.3334 10C20.3334 4.47715 15.8562 0 10.3334 0C4.81052 0 0.333374 4.47715 0.333374 10C0.333374 14.9912 3.99021 19.1283 8.77087 19.8785V12.8906H6.23181V10H8.77087V7.79688C8.77087 5.29063 10.2638 3.90625 12.548 3.90625C13.6418 3.90625 14.7865 4.10156 14.7865 4.10156V6.5625H13.5256C12.2834 6.5625 11.8959 7.3334 11.8959 8.125V10H14.6693L14.226 12.8906H11.8959V19.8785C16.6765 19.1283 20.3334 14.9912 20.3334 10Z"
+                                                fill="#E8F0FC" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_162_186">
+                                                <rect width="20" height="20" fill="white"
+                                                    transform="translate(0.333374)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+
+                                <!-- Twitter -->
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_162_188)">
+                                            <path
+                                                d="M6.62517 18.1251C14.1705 18.1251 18.2986 11.8724 18.2986 6.45167C18.2986 6.27589 18.2947 6.0962 18.2869 5.92042C19.0899 5.33967 19.783 4.62033 20.3334 3.7962C19.5855 4.12896 18.7914 4.34627 17.9783 4.44074C18.8344 3.92755 19.4755 3.12135 19.7826 2.17159C18.9772 2.64892 18.0964 2.98563 17.1779 3.1673C16.5591 2.50976 15.7409 2.07439 14.8498 1.9285C13.9587 1.78261 13.0444 1.93433 12.2482 2.3602C11.4519 2.78607 10.8182 3.46238 10.4449 4.28455C10.0716 5.10672 9.97956 6.02897 10.183 6.9087C8.55212 6.82686 6.95665 6.40321 5.50003 5.6652C4.0434 4.9272 2.75812 3.89132 1.72751 2.62472C1.20371 3.52782 1.04342 4.59649 1.27923 5.61353C1.51504 6.63057 2.12926 7.51966 2.99705 8.10011C2.34556 8.07943 1.70835 7.90402 1.13806 7.58839V7.63917C1.13748 8.58691 1.46512 9.50561 2.0653 10.2391C2.66548 10.9726 3.50114 11.4756 4.43025 11.6626C3.82675 11.8277 3.19336 11.8518 2.57908 11.7329C2.84125 12.548 3.35135 13.2609 4.03818 13.7721C4.72501 14.2833 5.55431 14.5673 6.41033 14.5845C4.95706 15.726 3.16185 16.3452 1.31384 16.3423C0.986113 16.3418 0.658707 16.3217 0.333374 16.2821C2.21075 17.4866 4.39465 18.1263 6.62517 18.1251Z"
+                                                fill="#E8F0FC" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_162_188">
+                                                <rect width="20" height="20" fill="white"
+                                                    transform="translate(0.333374)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+
+                                <!-- Instagram -->
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"
+                                        fill="none">
+                                        <path
+                                            d="M10.3334 1.80078C13.0053 1.80078 13.3217 1.8125 14.3724 1.85937C15.349 1.90234 15.8763 2.06641 16.2279 2.20313C16.6928 2.38281 17.0287 2.60156 17.3763 2.94922C17.7279 3.30078 17.9428 3.63281 18.1224 4.09766C18.2592 4.44922 18.4232 4.98047 18.4662 5.95312C18.5131 7.00781 18.5248 7.32422 18.5248 9.99219C18.5248 12.6641 18.5131 12.9805 18.4662 14.0313C18.4232 15.0078 18.2592 15.5352 18.1224 15.8867C17.9428 16.3516 17.724 16.6875 17.3763 17.0352C17.0248 17.3867 16.6928 17.6016 16.2279 17.7813C15.8763 17.918 15.3451 18.082 14.3724 18.125C13.3178 18.1719 13.0013 18.1836 10.3334 18.1836C7.6615 18.1836 7.34509 18.1719 6.29431 18.125C5.31775 18.082 4.79041 17.918 4.43884 17.7813C3.974 17.6016 3.63806 17.3828 3.29041 17.0352C2.93884 16.6836 2.724 16.3516 2.54431 15.8867C2.40759 15.5352 2.24353 15.0039 2.20056 14.0313C2.15369 12.9766 2.14197 12.6602 2.14197 9.99219C2.14197 7.32031 2.15369 7.00391 2.20056 5.95312C2.24353 4.97656 2.40759 4.44922 2.54431 4.09766C2.724 3.63281 2.94275 3.29688 3.29041 2.94922C3.64197 2.59766 3.974 2.38281 4.43884 2.20313C4.79041 2.06641 5.32166 1.90234 6.29431 1.85937C7.34509 1.8125 7.6615 1.80078 10.3334 1.80078ZM10.3334 0C7.61853 0 7.27869 0.0117187 6.21228 0.0585938C5.14978 0.105469 4.41931 0.277344 3.7865 0.523438C3.12634 0.78125 2.56775 1.12109 2.01306 1.67969C1.45447 2.23438 1.11462 2.79297 0.856812 3.44922C0.610718 4.08594 0.438843 4.8125 0.391968 5.875C0.345093 6.94531 0.333374 7.28516 0.333374 10C0.333374 12.7148 0.345093 13.0547 0.391968 14.1211C0.438843 15.1836 0.610718 15.9141 0.856812 16.5469C1.11462 17.207 1.45447 17.7656 2.01306 18.3203C2.56775 18.875 3.12634 19.2188 3.78259 19.4727C4.41931 19.7188 5.14587 19.8906 6.20837 19.9375C7.27478 19.9844 7.61462 19.9961 10.3295 19.9961C13.0443 19.9961 13.3842 19.9844 14.4506 19.9375C15.5131 19.8906 16.2435 19.7188 16.8763 19.4727C17.5326 19.2188 18.0912 18.875 18.6459 18.3203C19.2006 17.7656 19.5443 17.207 19.7982 16.5508C20.0443 15.9141 20.2162 15.1875 20.2631 14.125C20.3099 13.0586 20.3217 12.7188 20.3217 10.0039C20.3217 7.28906 20.3099 6.94922 20.2631 5.88281C20.2162 4.82031 20.0443 4.08984 19.7982 3.45703C19.5521 2.79297 19.2123 2.23438 18.6537 1.67969C18.099 1.125 17.5404 0.78125 16.8842 0.527344C16.2474 0.28125 15.5209 0.109375 14.4584 0.0625C13.3881 0.0117188 13.0482 0 10.3334 0Z"
+                                            fill="#E8F0FC" />
+                                        <path
+                                            d="M10.3334 4.86328C7.49744 4.86328 5.19666 7.16406 5.19666 10C5.19666 12.8359 7.49744 15.1367 10.3334 15.1367C13.1693 15.1367 15.4701 12.8359 15.4701 10C15.4701 7.16406 13.1693 4.86328 10.3334 4.86328ZM10.3334 13.332C8.49353 13.332 7.00134 11.8398 7.00134 10C7.00134 8.16016 8.49353 6.66797 10.3334 6.66797C12.1732 6.66797 13.6654 8.16016 13.6654 10C13.6654 11.8398 12.1732 13.332 10.3334 13.332Z"
+                                            fill="#E8F0FC" />
+                                        <path
+                                            d="M16.8724 4.66016C16.8724 5.32422 16.3334 5.85938 15.6732 5.85938C15.0092 5.85938 14.474 5.32031 14.474 4.66016C14.474 3.99609 15.0131 3.46094 15.6732 3.46094C16.3334 3.46094 16.8724 4 16.8724 4.66016Z"
+                                            fill="#E8F0FC" />
+                                    </svg>
+                                </a>
+
+                                <!-- Linkedin -->
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"
+                                        fill="none">
+                                        <path
+                                            d="M18.8529 0H1.80994C0.99353 0 0.333374 0.644531 0.333374 1.44141V18.5547C0.333374 19.3516 0.99353 20 1.80994 20H18.8529C19.6693 20 20.3334 19.3516 20.3334 18.5586V1.44141C20.3334 0.644531 19.6693 0 18.8529 0ZM6.26697 17.043H3.29822V7.49609H6.26697V17.043ZM4.78259 6.19531C3.82947 6.19531 3.05994 5.42578 3.05994 4.47656C3.05994 3.52734 3.82947 2.75781 4.78259 2.75781C5.73181 2.75781 6.50134 3.52734 6.50134 4.47656C6.50134 5.42188 5.73181 6.19531 4.78259 6.19531ZM17.3763 17.043H14.4115V12.4023C14.4115 11.2969 14.392 9.87109 12.8685 9.87109C11.3256 9.87109 11.0912 11.0781 11.0912 12.3242V17.043H8.13025V7.49609H10.974V8.80078H11.0131C11.4076 8.05078 12.3763 7.25781 13.8177 7.25781C16.8217 7.25781 17.3763 9.23438 17.3763 11.8047V17.043Z"
+                                            fill="#E8F0FC" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Main JavaScript -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
